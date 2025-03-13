@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap');
+
+/*pagina index*/
+* {
+   margin: 0;
+   text-decoration: none;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Nerko One", cursive, sans-serif;
+   font-family: "Nerko One", "cursive", sans-serif;
+}
+
+body {
+   width: 100%;
+   height: 100%;
+   background: url('../static/img/background.jpg'), no-repeat center center/cover;
+}
+
+.fundo {
+   background-color: #ffffff;
+   margin: 180px 180px;
+   width: 80%;
+   border-radius: 20px;
+   height: 80%;
+   box-shadow: 6px 6px 6px rgba(68, 16, 42, 0.6);
+}
+
+.header {
+   height: 25%;
+   width: 100%;
+   padding: 10px 15px;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+}
+
+.nav .logo {
+   border-radius: 10px;
+   padding: 0 5px;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+}
+
+.nav-list {
+   display: flex;
+   gap: 30px;
+   list-style: none;
+}
+
+.nav-list a {
+   font-size: 25px;
+   color: black;
+}
+
+.nav-list li {
+   text-decoration: none;
+}
+
+li.botao {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border-radius: 10px;
+   width: 160px;
+   text-align: center;
+   justify-content: center;
+   cursor: pointer;
+   height: 35px;
+}
+
+li.botao a {
+   color: #0707087e;
+   font-size: 25px;
+   cursor: pointer;
+}
+
+.linha-cor {
+   height: 3px;
+   background-image: radial-gradient(circle at left, rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+}
+
+.corpo {
+   margin: 35px;
+   display: flex;
+   height: 50vh;
+}
+
+.texto-home {
+   background-image: linear-gradient(rgba(59, 161, 205, .3), rgb(250, 106, 178, .3));
+   border-radius: 10px;
+}
+
+.texto-home h1 {
+   color: #4b72fd;
+   margin: 10px 15px;
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.texto-home button {
+   background-color: rgba(59, 161, 205, .6);
+   color: #ccc;
+   margin: 15px 50px;
+   border-radius: 10px;
+   width: 150px;
+   height: 30px;
+   justify-content: center;
+   text-align: center;
+   border: 0;
+   font-size: 20px;
+}
+
+.texto-home p {
+   margin: 15px 35px;
+   font-size: 20px;
+}
+
+strong {
+   color: #4b72fe;
+}
+
+.img-home img {
+   width: 350px;
+   border-radius: 40%;
+}
+
+footer {
+   padding: 10px;
+   font-size: 10px;
+}
+
+/*pagina login*/
+.box-label {
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #ccc;
+   padding: 20px;
+   display: flex;
+   font-size: 18px;
+   width: 80%;
+   flex-direction: column;
+}
+
+form {
+   border-radius: 10px;
+   width: 95%;
+   height: 100%;
+   margin: 10px;
+}
+
+.campo-input {
+   display: flex;
+}
+
+#input-email {
+   font-size: 10px;
+   border: 1px solid #ccc;
+   border-radius: 15px;
+   width: 50%;
+   height: 25px;
+   text-align: left;
+   padding: 0 10px;
+   margin: 20px 0 0;
+}
+
+.lembrar {
+   display: flex;
+   font-size: 10px;
+   text-align: center;
+   justify-content: center;
+   gap: 10px;
+   margin: 10px;
+}
+
+#login-title {
+   margin: 0 10px;
+}
+
+label {
+   flex: 1;
+   font-size: 20px;
+   margin: 20px 10px 0 180px;
+}
+
+input-box2 {
+   display: flex;   
+}
+
+
+#birthdate {
+   width: 25%;
+}
+
+#email,
+#password,
+#fC,
+#birthdate,
+#lastname,
+#nickname,
+#telephone,
+#gender { 
+   flex: 3;
+   font-size: 10px;
+   border: 1px solid #ccc;
+   border-radius: 15px;
+   width: 40%;
+   height: 30px;
+   text-align: left;
+   padding: 0 10px;
+   margin: 5px 0;
+}
+
+#birthdate {
+   width: 13%;
+}
+
+#email, #telephone {
+   width: 48%;
+}
+#password {
+   width: 48.5%;
+}
+
+#lastname {
+   width: 44%;
+}
+
+#nickname {
+   width: 42%;
+}
+#gender {
+   width: 47.5%;
+}
+
+.esqueceu {
+   text-align: center;
+   margin: 8px;
+   font-size: 12px;
+   margin-left: 25%;
+}
+
+.enviar-login input {
+   text-align: center;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border-radius: 10px;
+   width: 100px;
+   height: 30px;
+   font-size: 20px;
+   border: 0;
+   margin-left: 55%;
+}
+
+/*sobre*/
+#sobre {
+   margin: 30px 60px;
+   font-size: 20px;
+   gap: 10px;
+   border-radius: 15px;
+   background: rgb(237, 244, 252);
+}
+
+#sobre h1 {
+   color: #00659099;
+}
+
+.somos {
+   padding: 30px 50px;
+}
+
+.obj {
+   gap: 10px;
+   padding: 30px 50px;
+}
+
+.ideal {
+   margin: 0 50px;
+}
+
+.img-sob {
+   margin: 30px 50px;
+   display: flex;
+   gap: 180px;
+}
+
+.img-sob p {
+   font-size: 25px;
+   display: flex;
+   margin: 10px;
+}
+
+.img-sob img {
+   height: 40px;
+   width: 50px;
+   border-radius: 100%;
+   margin: 0 10px;
+   box-shadow: 3px 3px 5px rgb(50, 50, 50);
+}
+
+.segunda {
+   gap: 10px;
+   margin: 20px 50px;
+}
+
+/************** atividades *****************/
+:root {
+   --cor-de-fundo: #0c1e6a;
+   --cor-clara: #000;
+   --cor-clara2: rgba(2, 7, 78, 0.9);
+   --medida-espaco-8: 8px;
+   --medida-espaco-16: 16px;
+   --medida-espaco-24: 24px;
+   --medida-espaco-32: 32px;
+   --medida-espaco-64: 64px;
+   --largura-caixa-geral: 1200px;
+}
+
+.conteudo__geral {
+   align-items: flex-start;
+   display: flex;
+   min-height: 100%;
+   justify-content: center;
+   padding: var(--medida-espaco-64) var(--medida-espaco-24);
+}
+
+.conteudo__cartoes-grid {
+
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-column-gap: var(--medida-espaco-24);
+   grid-row-gap: var(--medida-espaco-24);
+   max-width: var(--largura-caixa-geral);
+   width: 100%;
+}
+
+
+@media (min-width: 540px) {
+   .conteudo__cartoes-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width: 960px) {
+   .conteudo__cartoes-grid {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+.elemento__cartao {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border-radius: 20px;
+   list-style: none;
+   position: relative;
+}
+
+.elemento__cartao:before {
+   content: "";
+   display: block;
+   padding-bottom: 150%;
+   width: 100%;
+}
+
+.elemento__cartao--fundo {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   background-position: center;
+   border-radius: var(--medida-espaco-24);
+   bottom: 0;
+   filter: brightness(0.75) saturate(1.2) contrast(0.85);
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+   opacity: 0.5;
+   transform-origin: center;
+   transform: scale(1) translateZ(0);
+   transition: filter 200ms linear, transform 200ms linear;
+}
+
+.descricao-ativi {
+   background-position: center;
+   filter: brightness(0.75) saturate(1.2) contrast(0.85);
+   position: absolute;
+   transform-origin: center;
+   padding: 90px 10px;
+   color: #000000;
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+}
+
+
+.elemento__cartao:hover .elemento__cartao--fundo {
+   transform: scale(1.05) translateZ(0);
+}
+
+
+.conteudo__cartoes-grid:hover>.elemento__cartao:not(:hover) .elemento__cartao--fundo {
+   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+
+}
+
+.elemento__cartao--conteudo {
+   left: 0;
+   padding: var(--medida-espaco-24);
+   position: absolute;
+   top: 0;
+}
+
+.elemento__cartao--texto-categoria {
+   color: var(--cor-clara);
+   font-size: 0.9rem;
+   margin-bottom: var(--medida-espaco-8);
+   text-transform: uppercase;
+}
+
+.elemento__cartao--texto-titulo {
+   color: var(--cor-clara2);
+   font-size: 1.7rem;
+   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+   line-height: 1;
+
+   text-transform: uppercase;
+}
+
+#botoes-alf {
+   text-transform: uppercase;
+   display: flex;
+}
+
+#botoes-alf button {
+   cursor: pointer;
+}
+
+.letras {
+   margin: 0 6px;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   padding: 5px 11.2px;
+   border: 0;
+   border-radius: 5px;
+   box-shadow: 3px 3px 3px #a4a3a3;
+}
+
+#footer-sobre {
+   font-size: 20px;
+   gap: 10px;
+}
+
+.fo-sobre {
+   display: flex;
+}
+
+.footer-sob {
+   flex: 1;
+   margin: 0px 75px;
+}
+
+.footer-sob h4 {
+   font-size: 25px;
+   color: #00659099;
+}
+
+.footer-sob a {
+   text-align: center;
+   justify-content: center;
+   margin: 8px;
+}
+
+.final-sob {
+   padding: 30px;
+}
+
+/*cadastro */
+#cadastro {
+   margin: 0 130px;
+}
+
+.form-cadastro {
+   margin: 30px 0px;
+   width: 100%;
+   gap: 10px;
+   background: rgb(237, 244, 252);
+}
+
+.enviar input {
+   margin-left: 45%;
+   padding: 0px;
+   background: rgb(171, 171, 226);
+   border-radius: 10px;
+   width: 100px;
+   border: 0;
+   font-size: 20px;
+}
+
+
+
+/************perfil resposavel ****/
+#perfil-responsavel {
+   display: flex;
+   margin: 30px 10px;
+
+}
+
+#dados-perfil {
+   flex: 1;
+   border-right: 1px solid #222831;
+   box-shadow: 2px 0 5px #8a8c90;
+   margin: 0 20px;
+   padding: 20px 0;
+}
+
+#dados-perfil figure {
+   text-align: center;
+   justify-content: center;
+
+}
+
+#dados-perfil figure img {
+   text-align: center;
+   justify-content: center;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   box-shadow: 3px 2px 8px #45474B;
+
+}
+
+.edit-button {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border: none;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+   text-decoration: none;
+   box-shadow: 3px 2px 5px #ccc;
+   padding: 5px 5px 0;
+   display: inline-block;
+   position: absolute;
+   /* Posiciona o botão absolutamente em relação ao container */
+   bottom: 25px;
+   /* Afasta 10px da borda inferior */
+   right: 60px;
+   /* Afasta 10px da borda direita */
+   color: white;
+   border: 2px solid #fff;
+
+   cursor: pointer;
+}
+
+
+.edit-button:hover {
+   background-image: linear-gradient(rgb(250, 106, 178, .6), rgba(59, 161, 205, .6));
+}
+
+.dados-usuario-perfil {
+   padding: 0 10px;
+}
+
+.input-perfil label {
+   margin: 25px 5px;
+}
+
+.input-perfil input {
+   border: 1px solid #ccc;
+   width: 100%;
+   margin: 20px 0;
+   padding: 2px 0 2px 15px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 5px #ccc;
+
+}
+
+#buttons-perfil {
+   text-align: center;
+}
+
+#buttons-perfil button {
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   margin: 20px 5px 0;
+   padding: 2px 5px;
+   border: 0;
+   border-radius: 10px;
+}
+
+#buttons-perfil a {
+   text-decoration: none;
+   color: #000;
+   padding: 2px 5px;
+}
+
+#hist-atividade {
+   flex: 3;
+   margin: 30px;
+}
+
+#registro-hist {
+   height: 120px;
+   margin: 20px;
+   padding: 15px 5px;
+
+}
+
+#grafico-perfil {
+   width: 100px;
+   height: 100px;
+}
+
+/**************************************************************************/
+
+/* Estiliza os títulos h1 */
+.exemplos h1 {
+   margin-top: 5rem;
+   font-size: 2.5rem;
+   /* Tamanho da fonte */
+   color: #132c72;
+   /* Cor do texto */
+   text-align: center;
+   /* Alinha o texto ao centro */
+   letter-spacing: 0.4rem;
+   /* Espaçamento entre letras */
+}
+
+.exemplos {
+   margin-bottom: 3rem;
+   /* Espaçamento abaixo de cada seção */
+
+}
+
+/* Estiliza os inputs dentro das seções */
+.exemplos input {
+   border: 3px solid red;
+   width: 30rem;
+   /* Largura dos inputs */
+   border: none;
+   /* Remove a borda padrão */
+   padding: 1rem;
+   /* Espaçamento interno */
+   border-radius: 1.5rem;
+   /* Borda arredondada */
+   margin-bottom: 1rem;
+   /* Espaçamento abaixo dos inputs */
+   font-size: 1rem;
+   /* Tamanho da fonte */
+   box-sizing: border-box;
+   /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+.exemplos button {
+   padding: 0.8rem 1.2rem;
+   /* Espaçamento interno do botão */
+   border: none;
+   /* Remove a borda padrão */
+   border-radius: 1.5rem;
+   /* Borda arredondada */
+   background-color: #30475E;
+   /* Cor de fundo do botão */
+   color: #f8f5f7;
+   /* Cor do texto do botão */
+   font-size: 1rem;
+   /* Tamanho da fonte */
+   cursor: pointer;
+   /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+.exemplos button:hover {
+   color: #f50c52;
+   background-color: #fed1e7;
+   /* Muda a cor de fundo ao passar o mouse */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+   width: 60rem;
+   /* Largura máxima da caixa de resultados */
+   height: 46vh;
+   /* Altura máxima da caixa de resultados */
+   overflow-y: auto;
+   /* Adiciona rolagem vertical se necessário */
+   margin-top: 1rem;
+   /* Espaçamento acima da caixa de resultados */
+   padding: 1rem;
+   /* Espaçamento interno */
+   border-radius: 0.6rem;
+   /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+   background: #FFFFFF;
+   /* Cor de fundo dos itens */
+   border-radius: 0.6rem;
+   /* Borda arredondada */
+   padding: 1rem;
+   /* Espaçamento interno */
+   margin-bottom: 1rem;
+   /* Espaçamento abaixo dos itens */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+   font-size: 1.5rem;
+   /* Tamanho da fonte */
+   color: #222831;
+   /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+   text-decoration: none;
+   /* Remove o sublinhado padrão dos links */
+   color: #30475E;
+   /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+   text-decoration: underline;
+   /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+   color: #45474B;
+   /* Cor do texto */
+   margin: 0.5rem 0;
+   /* Margem acima e abaixo */
+}
+
+/**************************perfil**************************/
+.container {
+   display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+   .exemplos h1 {
+      font-size: 2rem;
+      /* Tamanho da fonte em telas menores */
+      letter-spacing: 0.2rem;
+      /* Espaçamento entre letras em telas menores */
+   }
+
+   .exemplos input {
+      width: 25rem;
+      /* Largura dos inputs em telas menores */
+      padding: 0.8rem;
+      /* Espaçamento interno em telas menores */
+   }
+
+   .resultados-pesquisa {
+      width: 40rem;
+      /* Largura da caixa de resultados em telas menores */
+      height: 40vh;
+      /* Altura da caixa de resultados em telas menores */
+   }
+
+   .item-resultado h2 {
+      font-size: 1.3rem;
+      /* Tamanho da fonte dos títulos em telas menores */
+   }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+   .exemplos h1 {
+      font-size: 1.8rem;
+      /* Tamanho da fonte em telas pequenas */
+      letter-spacing: 0.1rem;
+      /* Espaçamento entre letras em telas pequenas */
+   }
+
+   .exemplos input {
+      width: 17rem;
+      /* Largura total dos inputs em telas pequenas */
+   }
+
+   .exemplos button {
+      padding: 0.6rem 1rem;
+      /* Espaçamento interno do botão em telas pequenas */
+      font-size: 0.9rem;
+      /* Tamanho da fonte do botão em telas pequenas */
+   }
+
+   .resultados-pesquisa {
+      width: 90%;
+      /* Largura da caixa de resultados em telas pequenas */
+      height: 50vh;
+      /* Altura da caixa de resultados em telas pequenas */
+   }
+
+   .item-resultado h2 {
+      font-size: 1.1rem;
+      /* Tamanho da fonte dos títulos em telas pequenas */
+   }
+
+   footer {
+      font-size: 0.9rem;
+      /* Tamanho da fonte do rodapé em telas pequenas */
+   }
+}
+
+
+
+/****calendario ****/
+#pag-calendario {
+   display: flex;
+   margin: 40px 0;
+}
+
+#botoes {
+   display: flex;
+   justify-content: center;
+   margin: 20px 0;
+}
+
+#botoes #anterior {
+   margin: 10px 30px;
+   padding: 10px;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border: 0;
+   border-radius: 20px;
+}
+
+#botoes #proximo {
+   margin: 10px 30px;
+   padding: 10px;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border: 0;
+   border-radius: 20px;
+}
+
+#botoes h1 {
+   margin: 5px 30px;
+   padding: 5px 10px;
+}
+
+
+#calendario-mes {
+   flex: 2;
+}
+
+#calendario {
+   justify-items: center;
+   padding: 0 30px;
+   background-color: #ffffff;
+}
+
+#calendario table {
+   margin: 10px 20px;
+   box-shadow: 3px 3px 6px #ccc;
+   border-radius: 20px;
+
+}
+
+tr td {
+   text-align: center;
+   padding: 0 40px 50px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+
+#sem-dia {
+   padding: 10px;
+   border-radius: 0%;
+   background-color: #fed1e7;
+
+}
+
+
+#calendario-mensal {
+   justify-items: center;
+   border: 1px solid #8c8989;
+   padding: 0;
+   margin: 10px;
+}
+
+#calendario-mensal h2 {
+   color: rgb(189, 20, 189);
+}
+
+#calendario-mensal div {
+   margin: 10px;
+}
+
+#feriado {
+   background-color: rgb(210, 207, 230);
+}
+
+#calendario-mensal td {
+   text-align: center;
+   padding: 2px;
+   margin: 0;
+   border: 0;
+   border-radius: 10px;
+   cursor: pointer;
+
+   transition: all 0.8s ease;
+   /* Transição suave para as mudanças */
+
+}
+
+#add-evento {
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+}
+
+#add-evento button {
+   margin: 0 30px;
+   padding: 0 10px;
+   background-image: linear-gradient(rgba(59, 161, 205, .6), rgb(250, 106, 178, .6));
+   border: 0;
+   border-radius: 20px;
+}
+
+#hover:hover {
+   /* Estilos quando o mouse passa por cima */
+   transform: scale(1.5);
+   /* Aumenta em 10% */
+   background-color: #6f7fc5;
+}
