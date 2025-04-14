@@ -928,3 +928,92 @@ tr td {
    /* Aumenta em 10% */
    background-color: #6f7fc5;
 }
+
+
+
+
+/* previsao do tempo */
+
+
+.caixa-maior {
+   background-color: #000000;
+   width: 95%; 
+   max-width: 420px; 
+   opacity: 0.8;
+   padding: 20px;
+   border-radius: 25px;
+}
+
+input .input-cidade {
+   border: none;/* borda do elemento */
+   outline: none;/* borda quando seleciona o elemento */
+   padding: 10px;/* espaçamento interno */
+   border-radius: 24px;/* arredonda as bordas */
+   font-size: 20px;
+   background-color: #7c7c7c2b;
+   color: #ffffff;
+   width: calc( 100% - 50px);
+}
+
+button .lupa-button {
+   border: none;
+   outline: none;
+   padding: 10px;
+   border-radius: 50px;
+   background-color: #7c7c7c2b;
+   float: right;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #7c7c7c6b;
+}
+
+.caixa-media {
+   margin-top: 30px;
+   
+}
+
+.caixa-menor {
+   display: flex;
+   align-items: center;
+   margin-left: 30%;
+   font-size: 20px;
+}
+
+.caixa-menor img {
+   height: 100px;
+   width: 100px;
+   float: right;
+}
+
+.lupa {
+   height: 20px;
+}
+
+h2 .cidade{
+   font-size: 28px; /* tamanho do texto */
+   font-weight: 400;
+}
+
+.temp {
+   margin-top: 5px;
+   font-size: 20px;
+}
+
+.texto-previsao {
+   margin-left: 50px;
+   text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+}
+
+
+.max-min {
+   font-size: 14px;
+   opacity: 0.5;
+}
+
+
+.umidade, .quali {
+   font-size: 18px;
+   opacity: 0.5;
+}
