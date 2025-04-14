@@ -29,7 +29,7 @@ Um site voltado para a Interação Familiar com dicas de atividades e brincadeir
 
 1. Criando o ambiente virtual Python e instalando os pacotes necessários
 ```shell
-python -m venv venv
+flask --app tanahora run --debug
 
 source venv/bin/activate
 pip install -r requirements.txt
