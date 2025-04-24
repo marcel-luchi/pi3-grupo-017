@@ -942,6 +942,7 @@ tr td {
    opacity: 0.8;
    padding: 20px;
    border-radius: 25px;
+   border-color: red solid 1px;
 }
 
 input .input-cidade {
