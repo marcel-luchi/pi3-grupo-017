@@ -38,39 +38,165 @@
                     </ul>
                 </nav>
             </header>
-            <div class="corpo">
-                <div class="texto-index">
+            <div class="corpo-inicio">
+                <div class="texto-inicio">
                     <h1> Tá na Hora ... </h1>
-                    <p>  Olá {{usuario.nickname}}</p>
+                    <p class="nome-usuario">  Olá {{usuario.nickname}}</p>
                     <p >  Uma forma <strong> DIVERTIDA </strong> de Interação em Família.</p>
                     <p> Esta web site é uma ferramenta que permite as famílias, de maneira lúdica e educativa, a <strong>DESENVOLVER</strong> estratégias que auxilie na modulação de comportamento e no estreitamento dos <strong>LAÇOS FAMILIARES.</strong> </p>
                 </div>
-                <div class="img-index">
-                    <img  src="./static/img/familia 2.jpg" alt="">
+                <div class="img-inicio">
+                    <img  src="./static/img/familia2.jpg" alt="">
                 </div> 
             </div>
 
-            <div class="caixa-maior">
-
-                <input class="input-cidade" placeholder="Digite o nome da cidade.">
-                <button onclick= "cliqueiNoBotao()">
-                    <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
-                </button>
-        
-                <div class="caixa-media">
-                    <h2 class="cidade">Tempo em São Paulo </h2>
-                    <p class="temp"> 28°C </p>
-                    <p class="max-min">Max.: 29°C / Min.: 19°C </p>
-        
-                    <div class="caixa-menor">
-                        <p class="texto-previsao">Ensolarado</p>
-                        <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+            <div class="lembretes-inicio">
+                <div class="caixa-maior">
+                    <input class="input-cidade" placeholder="Digite o nome da cidade.">
+                    <button onclick= "cliqueiNoBotao()">
+                        <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
+                    </button>            
+                    <div class="caixa-media">
+                        <h2 class="cidade">Tempo em São Paulo </h2>
+                        <p class="temp"> 28°C </p>
+                        <p class="max-min">Max.: 29°C / Min.: 19°C </p>
+            
+                        <div class="caixa-menor">
+                            <p class="texto-previsao">Ensolarado</p>
+                            <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
+                        </div>
+            
+                        <p class="umidade">Umidade: 70% - Vento: 8km/h </p>
+            
                     </div>
-        
-                    <p class="umidade">Umidade: 70% - Vento: 8km/h </p>
-        
+
+                    
+                </div>
+                <div class="lembrete-calendario">
+                    <h1 class="title-inicio"> Tarefas da Semana </h1>
+                    <div class="tarefas-inicio">
+                        <h2 class="inicio-calen"> Esta Semana </h2> 
+                        <table>
+                            <thead>
+                                <tr> 
+                                    <th> Dom </th> 
+                                    <th> Seg </th> 
+                                    <th> Ter</th> 
+                                    <th> Qua </th> 
+                                    <th> Qui</th> 
+                                    <th> Sex</th> 
+                                    <th> Sab </th> 
+                                </tr>
+                                
+                            </thead>
+                            <tbody> 
+                                <tr> 
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul> - Reunião   </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+
+
+                    </div>
+                    <div class="tarefas-inicio">
+                        <h2 class="inicio-calen"> Proxima Semana </h2> 
+                        <table>
+                            <thead>
+                                <tr> 
+                                    <th> Dom </th> 
+                                    <th> Seg </th> 
+                                    <th> Ter</th> 
+                                    <th> Qua </th> 
+                                    <th> Qui</th> 
+                                    <th> Sex</th> 
+                                    <th> Sab </th> 
+                                </tr>
+                                
+                            </thead>
+                            <tbody> 
+                                <tr> 
+                                    <td>
+                                        <ul> -  Aniversario  </ul>
+                                        <ul> - mercado </ul>
+                                        <ul>  </ul>
+                                    </td>
+
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                        <ul>  </ul>
+                                    </td>
+                                    <td>
+                                        <ul>  </ul>
+                                        <ul> - Consulta</ul>
+                                    </td>
+                                    
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+
                 </div>
             </div>
+           
             <footer>
                 <div class="final">
                     <p> &copy;Projeto Integrador em Computação II </p>
