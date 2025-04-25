@@ -134,3 +134,19 @@ function cliqueiNoBotao() {
 
 // VARIÁVEIS => Um espaço da memória do computador que guardamos algo (um numero, uma letra, um texto, uma imagem)
 // FUNÇÃO => Um trecho de código que só é executado quando é chamado
+
+
+
+
+/****** calendario ***** */
+
+function adicionarTarefa() {
+   let resposta = confirm("Deseja adicionar um evento ?");
+
+   if (resposta) {
+    console.log(" O usuário confirmou");
+    //ok
+   } else {
+    ContentVisibilityAutoStateChangeEvent.log(" O usuário cancelou");
+   }
+};
