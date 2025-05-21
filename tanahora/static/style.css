@@ -965,6 +965,7 @@ tr td {
    opacity: 0.8;
    padding: 18px;
    border-radius: 25px;
+   border-color: red solid 1px;
 }
 
 .caixa-maior .input-cidade {
